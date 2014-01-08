@@ -1,5 +1,4 @@
-
 all: build
 
 build: 
-	docker build -t progrium/buildstep .
+	docker build -t tyrion/buildstep .
