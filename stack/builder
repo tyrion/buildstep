@@ -2,11 +2,10 @@
 set -e
 
 app_root=/app
-build_root=/build/app
+build_root=/app
 cache_root=/cache/app
 buildpack_root=/build/buildpacks
 
-cp -r /app /build
 
 buildpacks=($buildpack_root/*)
 selected_buildpack=
@@ -79,6 +78,3 @@ else
 fi
 EOF
 chmod +x /start
-
-rm -fR /app
-mv /build/app /
